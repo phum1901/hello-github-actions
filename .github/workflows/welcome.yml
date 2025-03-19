@@ -1,4 +1,4 @@
-name: Post welcome comment 
+name: Post welcome comment
 
 on:
   pull_request:
@@ -6,4 +6,7 @@ on:
 
 permissions:
   pull-requests: write
-
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Post welcome comment
